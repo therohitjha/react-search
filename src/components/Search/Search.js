@@ -13,13 +13,9 @@ class Search extends Component {
   listRef = React.createRef();
 
   componentDidMount() {
-    fetch("http://www.mocky.io/v2/5ba8efb23100007200c2750c")
-      .then((response) => response.json())
-      .then((users) =>
-        this.setState({
-          users,
-        })
-      );
+    this.setState({
+      users,
+    });
   }
 
   matchItems = (items, regexp) => {
