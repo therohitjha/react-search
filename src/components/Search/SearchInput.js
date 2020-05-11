@@ -10,6 +10,7 @@ const SearchInput = props => {
       onChange={props.changeHandler}
       onKeyDown={props.keyPressHandler}
       placeholder={props.placeholder}
+    autofocus
     />
   );
 };
